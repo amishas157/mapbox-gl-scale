@@ -1,7 +1,7 @@
 {
-  "name": "mapbox-gl-geocoder",
+  "name": "mapbox-gl-scale",
   "version": "1.1.0",
-  "description": "A geocoder control for Mapbox GL JS",
+  "description": "A scale control for Mapbox GL JS",
   "main": "index.js",
   "scripts": {
     "start": "budo example/index.js --serve=example/bundle.js --live -d",
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mapbox/mapbox-gl-geocoder.git"
+    "url": "git+ssh://git@github.com/mapbox/mapbox-gl-scale.git"
   },
   "keywords": [
-    "geocoder",
+    "scale",
     "osm",
     "gl"
   ],
   "author": "Mapbox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/mapbox-gl-geocoder/issues"
+    "url": "https://github.com/mapbox/mapbox-gl-scale/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-geocoder#readme",
+  "homepage": "https://github.com/mapbox/mapbox-gl-scale#readme",
   "devDependencies": {
     "browserify": "^11.2.0",
     "budo": "^7.0.2",

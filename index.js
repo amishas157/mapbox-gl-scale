@@ -19,9 +19,9 @@ function _updateScale(map) {
   console.log("scale2 " + 4 * scale);
   console.log("scale3 " + centimeters);
 
-  /*ruler.style.width = centimeters / scale + 'cm';
+  ruler.style.width = centimeters / scale + 'cm';
   console.log("width" + ruler.style.width);
-  ruler.innerHTML = meters < 1000 ? meters + ' m' : (meters / 1000) + ' km'; */
+  ruler.innerHTML = meters < 1000 ? meters + ' m' : (meters / 1000) + ' km'; 
 
 }
 
@@ -46,7 +46,19 @@ Scale.prototype = mapboxgl.util.inherit(mapboxgl.Control, {
 
 
   onAdd: function(map) {
-    console.log("Hello world");
+    this.container = this.options.container ?
+      typeof this.options.container === 'string' ?
+      document.getElementById(this.options.container) :
+      this.options.container :
+      map.getContainer();
+
+          var el = document.createElement('div');
+    el.className = 'mapboxgl-ctrl-scale';
+    el.id = 'ruler';
+
+     this.container.appendChild(el);
+
+    console.log("Hi world");
     _updateScale(map);
      map.on('moveend', function() {
      _updateScale(map);

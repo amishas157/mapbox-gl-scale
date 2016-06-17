@@ -15,15 +15,3 @@ Tests require an MapboxAccessToken env variable to be set.
 Lastly, run the test command from the console:
 
     npm test
-
-## Deploying
-
-- `npm run build && npm run docs`
-- Update the version key in [package.json](https://github.com/mapbox/mapbox-gl-geocoder/blob/master/package.json#L3)
-- Outline changes in [CHANGELOG.md](https://github.com/mapbox/mapbox-gl-geocoder/blob/master/CHANGELOG.md)
-- Commit and push
-- `git tag -a vX.X.X -m 'vX.X.X'`
-- `git push --tags`
-- `npm publish`
-- Deploy packaged plugin in [mapbox-gl-plugins](https://github.com/mapbox/mapbox-gl-plugins)
-- Update version links in documentation

@@ -12,8 +12,5 @@ var map = new mapboxgl.Map({
 });
 
 var scale = new mapboxgl.Scale();
-var button = document.createElement('button');
-button.textContent = 'click me';
 
-map.getContainer().querySelector('.mapboxgl-ctrl-bottom-left').appendChild(button);
 map.addControl(scale);

@@ -1,6 +1,6 @@
 .mapboxgl-ctrl-scale {
   font-size:11px;
-  position:absolute;
+  position:relative;
   background:white;
   border-width:medium 2px 2px;
   border-style:none solid solid;

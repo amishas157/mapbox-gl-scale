@@ -22,15 +22,16 @@
 <div id="map" class="map">
 </div>
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoiYW1pc2hhczE1NyIsImEiOiJjaW1uOWNkMnEwMGQxdHNtNHdiamd3b2dyIn0.V0u5PjZhjKeJ0SKBMRqLeg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW1pc2hhczE1NyIsImEiOiJjaW1uOWNkMnEwMGQxdHNtNHdiamd3b2dyIn0.V0u5PjZhjKeJ0SKBMRqLeg';
 
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v8',
-  center: [-79.45, 43.65]
+  center: [-79.4512, 43.6568],
+  zoom: 0,
 });
 
-map.addControl(new mapboxgl.Geocoder());
-</script>
+var scale = new mapboxgl.Scale();
+map.addControl(scale);</script>
 </body>
 </html>
